@@ -14,7 +14,7 @@
           <input
             id="name"
             type="text"
-            name="text"
+            name="name"
             placeholder="Enter your name"
           />
         </div>
@@ -35,30 +35,21 @@
             <option value="others">Others</option>
           </select>
         </div>
-
         <div class="form-control">
           <label for="color">Choose a color</label>
           <input
             id="color"
             type="color"
-            name="email"
+            name="color"
             placeholder="Enter your email"
           />
         </div>
         <div class="form-control">
           <label for="range"> Rate the movie Inception out of 10 </label>
-          <input
-            id="range"
-            type="range"
-            max="10"
-            step="1"
-            name="email"
-            placeholder="Enter your email"
-          />
+          <input id="range" type="range" max="10" step="1" name="range" />
         </div>
         <div class="form-control">
-          <label>Book genre you love?</label>
-
+          <label>Book genre you love?</label>2
           <div>
             <input
               type="radio"
@@ -91,6 +82,12 @@
         </div>
         <button type="submit">Submit</button>
       </form>
+      <div class="modal_overlay">
+        <div class="container relative">
+          <button class="modal_close">x</button>
+          <div class="modal_info"></div>
+        </div>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
